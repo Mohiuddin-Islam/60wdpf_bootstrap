@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Form1: Login Form</h2>
+        <form action="">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" class="form-control" placeholder="Enter Email">
+              
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" class="form-control" placeholder="Enter password">
+            </div>
+            <button class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="name" name="name" class="form-control" placeholder="Enter Your Name">
+              
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter Your Email">
+
+                <label for="gender">Gender:</label>
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="gender" value="male">Male
+                        </label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="gender" value="female">Female
+                    </div>
+                    <div class="form-group">
+                        <label for="">Date of Birth:</label>
+                        <input type="date" name="dob" class="form-control" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Your Subject</label>
+                    <div class="form-check">
+                        <lable class="form-check-label">
+                            <input type="checkbox" name="php" class="form-check-input">PHP
+
+                        </lable>
+                    </div>
+                    
+                    <div class="form-check">
+                        <lable class="form-check-label">
+                            <input type="checkbox" name="php" class="form-check-input">JavaScript
+
+                </div>
+                <div class="form-group">
+                    <label for="">District:</label>
+                    <select class="form-control" name="district">
+                        <option value="">Select One</option>
+                        <option value="">Dhaka</option>
+                        <option value="">Barisal</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Address:</label>
+                    <textarea class="form-control" name="address" rows="5" placeholder="Enter Address"></textarea>
+
+                </div>
+                <input type="submit" class="btn btn-primary" name="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
